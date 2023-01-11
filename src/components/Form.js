@@ -10,7 +10,7 @@ const Form = ({setInputText, todos, setTodos, inputText,setStatus}) => {
     e.preventDefault();
     setTodos([
       ...todos, {text:inputText, inputTextHandler, completed: false, id: Math.random() * 1000}
-    ]);
+    ]); 
     setInputText('');
   };
   const statusHandler = (e) => {
